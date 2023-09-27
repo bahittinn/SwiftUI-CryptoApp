@@ -21,8 +21,10 @@ struct AllCoinsView: View {
             .foregroundColor(.secondary)
             .font(.caption)
             
-            ForEach(0 ..< 50, id: \.self) { _ in
-                AllCoinsItemView()
+            ScrollView {
+                ForEach(0 ..< 50, id: \.self) { _ in
+                    AllCoinsItemView()
+                }
             }
         }
         .padding(.horizontal, 10)
