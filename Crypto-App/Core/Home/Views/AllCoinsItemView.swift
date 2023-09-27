@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct AllCoinsItemView: View {
+    let coin: Coin
     var body: some View {
         VStack(alignment: .leading) {
             HStack() {
-                Text("1")
+                Text("\(coin.marketCapRank ?? 1)")
                     .foregroundColor(.secondary)
                     .font(.caption)
                 
@@ -22,22 +23,22 @@ struct AllCoinsItemView: View {
                     .scaledToFit()
                 
                 VStack(alignment: .leading) {
-                    Text("Bitcoin")
+                    Text(coin.name)
                         .font(.subheadline)
                         .fontWeight(.semibold)
                     
-                    Text("BTC")
+                    Text(coin.symbol.uppercased())
                         .font(.footnote)
                 }
                 
                 Spacer()
                 
                 VStack(alignment: .trailing, spacing: 4) {
-                    Text("$20,330,00")
+                    Text("\(coin.currentPrice)")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .padding(.leading, 4)
-                    Text("-5.60%")
+                    Text("\(coin.priceChangePercentage24H)")
                         .font(.callout)
                         .foregroundColor(.red)
                 }
@@ -47,8 +48,8 @@ struct AllCoinsItemView: View {
     }
 }
 
-struct AllCoinsItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        AllCoinsItemView()
-    }
-}
+//struct AllCoinsItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AllCoinsItemView()
+//    }
+//}

@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct Coin: Codable {
-    let id, symbol, name: String?
+struct Coin: Codable, Identifiable {
+    let id, symbol, name: String
     let image: String?
-    let currentPrice: Double?
+    let currentPrice: Double
     let marketCap, marketCapRank: Int?
     let fullyDilutedValuation: Int?
     let totalVolume, high24H, low24H, priceChange24H: Double?
-    let priceChangePercentage24H, marketCapChange24H, marketCapChangePercentage24H, circulatingSupply: Double?
+    let priceChangePercentage24H, marketCapChange24H, marketCapChangePercentage24H, circulatingSupply: Double
     let totalSupply, maxSupply: Double?
     let ath, athChangePercentage: Double?
     let athDate: String?

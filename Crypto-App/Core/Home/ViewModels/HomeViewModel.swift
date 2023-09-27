@@ -8,6 +8,7 @@
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
+    @Published var coins = [Coin]()
     
     init() {
         fetchCoinData()
@@ -31,8 +32,10 @@ class HomeViewModel: ObservableObject {
             guard let data = data else { return }
             
             do {
-                let data = try JSONSerialization.jsonObject(with: data,options: .fragmentsAllowed)
-                print(data)
+                let coins = try JSONDecoder().decode([Coin].self, from: data)
+                DispatchQueue.main.async {
+                    self.coins = coins
+                }
             } catch {
                 print(error.localizedDescription)
             }
