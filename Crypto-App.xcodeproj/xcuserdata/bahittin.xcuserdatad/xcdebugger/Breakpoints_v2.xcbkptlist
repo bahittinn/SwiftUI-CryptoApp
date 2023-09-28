@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C4AC4612-8B20-4F43-AE4D-04B1112FCA30"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BCCDC3FD-6BDA-4399-B0B8-5E3D898803AE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Crypto-App/Core/Home/ViewModels/HomeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "configureTopMovingCoins()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BCCDC3FD-6BDA-4399-B0B8-5E3D898803AE - f0b60602cd4d5354"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Crypto_App.HomeViewModel.configureTopMovingCoins() -&gt; ()"
+                  moduleName = "Crypto-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahittin/Desktop/ads%C4%B1z%20klaso%CC%88r/swift/GitHub/Crypto-App/Crypto-App/Core/Home/ViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "BCCDC3FD-6BDA-4399-B0B8-5E3D898803AE - 578e612f063659d9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Crypto_App.Coin, Crypto_App.Coin) -&gt; Swift.Bool in Crypto_App.HomeViewModel.configureTopMovingCoins() -&gt; ()"
+                  moduleName = "Crypto-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bahittin/Desktop/ads%C4%B1z%20klaso%CC%88r/swift/GitHub/Crypto-App/Crypto-App/Core/Home/ViewModels/HomeViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
