@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct AllCoinsItemView: View {
     let coin: Coin
@@ -16,7 +17,7 @@ struct AllCoinsItemView: View {
                     .foregroundColor(.secondary)
                     .font(.caption)
                 
-                Image(systemName: "bitcoinsign.circle.fill")
+                KFImage(URL(string: coin.image ?? "image"))
                     .resizable()
                     .frame(width: 32, height: 32)
                     .foregroundColor(.orange)
