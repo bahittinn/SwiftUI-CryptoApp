@@ -41,6 +41,6 @@ struct TopMoversItemView: View {
 
 //struct TopMoversItemView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        TopMoversItemView()
+//        TopMoversItemView(coin: coi)
 //    }
 //}

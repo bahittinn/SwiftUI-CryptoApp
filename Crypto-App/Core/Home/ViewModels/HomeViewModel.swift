@@ -12,7 +12,7 @@ class HomeViewModel: ObservableObject {
     @Published var topMovingCoins = [Coin]()
     init() {
         fetchCoinData()
-        configureTopMovingCoins()
+        
     }
     
     func fetchCoinData() {
@@ -36,6 +36,7 @@ class HomeViewModel: ObservableObject {
                 let coins = try JSONDecoder().decode([Coin].self, from: data)
                 DispatchQueue.main.async {
                     self.coins = coins
+                    self.configureTopMovingCoins()
                 }
             } catch {
                 print(error.localizedDescription)
