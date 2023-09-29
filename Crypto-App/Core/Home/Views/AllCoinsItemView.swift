@@ -35,11 +35,11 @@ struct AllCoinsItemView: View {
                 Spacer()
                 
                 VStack(alignment: .trailing, spacing: 4) {
-                    Text("\(coin.currentPrice)")
+                    Text("\(coin.currentPrice.toCurrency())")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                         .padding(.leading, 4)
-                    Text("\(coin.priceChangePercentage24H)")
+                    Text("\(coin.priceChangePercentage24H.toPercentString())")
                         .font(.callout)
                         .foregroundColor(.red)
                 }
